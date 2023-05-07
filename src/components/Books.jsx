@@ -1,6 +1,3 @@
-import BooksList from './BooksList';
-
-// carries list of books
 const Books = () => {
   const books = [
     {
@@ -22,7 +19,15 @@ const Books = () => {
 
   return (
     <>
-      <BooksList key={books.id} bookProps={books} />
+      <ul className="displayedBooks">
+        {books.map((book) => (
+          <div key={book.id}>
+            <li>{book.title}</li>
+            <li>{book.author}</li>
+            <button type="button">Remove</button>
+          </div>
+        ))}
+      </ul>
     </>
   );
 };

@@ -8,12 +8,10 @@ function App() {
     <Router>
       <>
         <Navigation />
-        <div className="pages">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/categories" element={<Categories />} />
-          </Routes>
-        </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/categories" element={<Categories />} />
+        </Routes>
       </>
     </Router>
   );
