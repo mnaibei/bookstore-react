@@ -33,4 +33,12 @@
       "dist/",
       "build/"
     ]
+    // "import/no-extraneous-dependencies": [
+    //   "error",
+    //   {
+    //     "devDependencies": ["**/*.test.js", "**/*.spec.js"],
+    //     "optionalDependencies": false,
+    //     "peerDependencies": false
+    //   }
+    // ]    
   }
