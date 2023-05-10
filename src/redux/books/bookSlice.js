@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk, isRejectedWithValue } from '@reduxjs/too
 // eslint-disable-next-line import/no-extraneous-dependencies
 import axios from 'axios';
 
-const url = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/0POBCeDJRoHwZc2T3ceJ/books';
+const url = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/UHXf29hQzudmQrt1PhXv/books';
 
 const initialState = {
   books: [],

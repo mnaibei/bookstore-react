@@ -4,14 +4,16 @@ import styles from '../styles/NavBar.module.css';
 const Navigation = () => (
   <>
     <nav className={styles.nav}>
-      <h1 className="title">
-        BookStore CMS
-      </h1>
-      <ul className={styles.navlinks}>
-        <li className="links"><a href="/" content="books">Books</a></li>
-        <li className="links"><a href="/categories" content="categories">Categories</a></li>
-      </ul>
-      <div className="profile">
+      <div className={styles.title}>
+        <h1>
+          BookStore CMS
+        </h1>
+        <ul className={styles.navlinks}>
+          <li className={styles.links}><a href="/" content="books">Books</a></li>
+          <li className={styles.linksCat}><a href="/categories" content="categories">Categories</a></li>
+        </ul>
+      </div>
+      <div className={styles.profile}>
         <CgProfile />
       </div>
     </nav>
