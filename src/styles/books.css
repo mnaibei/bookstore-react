@@ -1,3 +1,134 @@
-p {
-  height: 20px;
+.mainContent {
+  padding: 1.5rem;
+}
+
+.displayedBooks {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0.75rem;
+}
+
+.book-cards {
+  background-color: #fff;
+  padding: 0.45rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 0.2rem;
+}
+
+.category {
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #121212;
+}
+
+.book-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #121212;
+}
+
+.author {
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  color: #4386bf;
+}
+
+.book-info {
+  padding: 0.75rem;
+  min-width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-left: -0.75rem;
+}
+
+.btn-container button {
+  width: 4.5rem;
+  height: 2rem;
+  color: #4386bf;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+  font-size: 0.685rem;
+  text-transform: capitalize;
+}
+
+.btn-container button:hover {
+  background-color: #0290ff;
+  color: #fff;
+  border-radius: 0.4rem;
+}
+
+.card-hr {
+  border: 0.01rem solid #bbb8b8;
+  height: 0.8rem;
+}
+
+.chapter-hr {
+  border-left: 0.1rem solid #bbb8b8;
+  height: 3rem;
+}
+
+.progress-percent {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.3rem solid #3498db;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  background-color: #fff;
+  border-bottom-color: rgb(175, 175, 175);
+  transform: rotate(240deg);
+}
+
+.current-chapter-container {
+  margin-right: 5rem;
+  min-width: 20%;
+}
+
+.current-chapter {
+  color: #121212;
+  opacity: 0.5;
+  text-transform: uppercase;
+  font-size: 0.613rem;
+  margin-bottom: 1px;
+}
+
+.chapter {
+  margin-bottom: 1.5rem;
+  color: #121212;
+  opacity: 0.8;
+  font-size: 1rem;
+}
+
+.progress {
+  background-color: #0290ff;
+  color: #fff;
+  min-width: 11.5rem;
+  min-height: 2.063rem;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
 }

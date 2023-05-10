@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addBook, postBooks } from '../redux/books/bookSlice';
+import '../styles/form.css';
 
 const Form = () => {
   const initial = {
@@ -40,18 +41,21 @@ const Form = () => {
 
   return (
     <>
-      <h3>ADD NEW BOOK</h3>
-      <form action="submit" className="submit">
-        <input type="text" className="title" placeholder="Book title" onChange={handleChange} name="title" value={state.title} />
-        <input type="text" className="author" placeholder="Author" onChange={handleChange} name="author" value={state.author} />
-        <button
-          type="button"
-          className="addBook"
-          onClick={handleSubmit}
-        >
-          Add Book
-        </button>
-      </form>
+      <hr className="form-hr" />
+      <div className="add-book">
+        <h3>add new book</h3>
+        <form action="submit" className="submit">
+          <input type="text" className="title" placeholder="Book title" onChange={handleChange} name="title" value={state.title} />
+          <input type="text" className="author" placeholder="Author" onChange={handleChange} name="author" value={state.author} />
+          <button
+            type="button"
+            className="addBook"
+            onClick={handleSubmit}
+          >
+            Add Book
+          </button>
+        </form>
+      </div>
     </>
   );
 };
